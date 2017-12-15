@@ -1,6 +1,10 @@
+:root {
+    --main-font-color: #000333
+}
+
 body{
     /* COMP 23E BACKGROUND COLOR */
-    background: #fffff0;
+    background: #fffff0; 
 }
 
 /* COMP 22C-2 . */
@@ -64,21 +68,25 @@ a:visited {
     height: 70vh;
 }
 
+/* COMP 31C VARIABLES*/
 h3 {
+    color: var(--main-font-color);
     display: flex;
     justify-content: center;
 }
-/* */
 
+/* COMP 31D GRIDS*/
 .video-grid{
     display: grid;
     justify-content: center;
     grid-template-columns: 30vw 30vw;
     grid-template-rows: 100px;
-    grid-column-gap: 20px;
+    grid-column-gap: 200px;
     grid-row-gap: 250px;
     width: 80vw;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #video1 {
@@ -101,6 +109,32 @@ h3 {
     grid-row-start: 2;
 }
 
+/* COMP 29C MEDIA QUERIES */
+@media (max-width: 900px) {
+    .video-grid {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    #video1 {
+
+    }
+    
+    #video2 {
+
+    }
+
+    #video3 {
+
+    }
+
+    #video4 {
+
+    }
+
+}
+
 .audio-box{
     margin: 30px;
     display: flex;
@@ -112,6 +146,14 @@ audio{
     margin: 5px;
 }
 
+/* COMP 26L NTH-CHILD */
+.audio-box h4:nth-child(3n+1) {
+    color: green;
+}
+
+.audio-box h4:nth-child(3n+0) {
+    color: blue;
+}
 
 .image-list{
     display: flex;
@@ -176,6 +218,13 @@ img {
     left: 100px;
 }
 
+/* COMP 26E DISABLED */
+.nothing-input:disabled{
+    position: absolute;
+    top: 300px;
+    width: 400px;
+    background: #dddddd;
+}
 
 /* COMP 25C ABSOLUTE*/
 

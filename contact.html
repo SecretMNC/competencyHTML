@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Contact</title>
+</head>
+
+<body class="contact-body">
+    <h3>About me:</h3>
+    <section class="navbar">
+        <a href="index.html">Home</a>
+        <a href="videos.html">Video</a>
+        <a href="audio.html">Audio</a>
+        <a href="images.html">Memes</a>
+    </section>
+    <div>
+        <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAIA_wDGAAAAAQAAAAAAAAs4AAAAJGVjMDBhM2FiLTY5ZjAtNGU1NC1hYWVmLWEwMmM1NjFmOTE0Ng.jpg"
+            alt="my mugshot" />
+            <!-- COMP 54H LINK -->
+        <a href="https://www.linkedin.com/in/kevin-pett/" class="linkedin">Check out my LinkedIn page here!</a>
+        <br>
+
+        <div class='code-skillz'>
+            <h4>Here's a demonstration of my coding skillzzz</h4>
+            <br>
+            <br>
+            <p>Enter a palindrome:</p>
+            <input type="text" name="test" placeholder="e.g. hannah or racecar" id="input">
+            <button onclick="palindromeTest()">Enter</button>
+            <p id="res">The result will go here.</p>
+        </div>
+    </div>
+    <!-- COMP 61C SCRIPT -->
+    <script>
+        function palindromeTest() {
+            let input = document.getElementById("input").value
+            let newStr = input.split('').reverse();
+            let finalStr = newStr.join('');
+            if (finalStr === input) {
+               return document.getElementById("res").innerHTML = input + " is a palindrome!"
+            } else {
+               return document.getElementById("res").innerHTML = input + " is not a palindrome!"
+            }
+        }
+    </script>
+</body>
+
+</html>

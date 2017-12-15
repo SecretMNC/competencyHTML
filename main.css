@@ -3,7 +3,7 @@ body{
     background: #fffff0;
 }
 
-/* COMP 22C-2 CLASS */
+/* COMP 22C-2 . */
 
 .body-container{
     width: 100%;
@@ -20,7 +20,7 @@ body{
     margin-bottom: 50px;
 }
 
-/* COMP 22C-1 ID */
+/* COMP 22C-1 # */
 
 #article-header{
     width:50vw;
@@ -34,6 +34,7 @@ body{
 }
 
 a {
+    /* COMP 24C MARGIN */
     margin: 5px;
     text-decoration: none;
     color: red;
@@ -105,6 +106,7 @@ audio{
     margin: 5px;
 }
 
+
 .image-list{
     display: flex;
     flex-direction: column;
@@ -116,6 +118,21 @@ li{
     font-family: sans-serif;
     font-size: 20px;
     margin: 10px;
+    color: darkgrey;
+}
+
+/* COMP 22C-5 + */
+
+li + img + li {
+    color: orange;
+}
+
+li + img + li + img + li {
+    color: green;
+}
+
+li + img + li + img + li + img + li {
+    color: purple;
 }
 
 img {
@@ -145,19 +162,37 @@ img {
     float: right;
 }
 
+/* COMP 25C FIXED*/
+
+.fixed {
+    position: fixed;
+    top: 50px;
+    left: 100px;
+}
+
+
+/* COMP 25C ABSOLUTE*/
+
 .code-skillz {
     position: absolute;
-    top: 400px;
+    top: 700px;
     left: 100px;
+    /* COMP 23F BACKGROUND IMAGE*/
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/DNA_palindrome.svg/600px-DNA_palindrome.svg.png');
-    border: 1px solid black;
-    padding: 3px;
+    /* COMP 24F BOX-SIZING */
+    box-sizing: border-box;
+    width: 700px;
     height: 300px;
+    padding: 5px;
+    margin-bottom: 100px;
+    /* COMP 24D BORDER */
+    border: 1px solid black;
+    /* COMP 24E PADDING */
     background-repeat: no-repeat;
 }
 
 /* COMP 22C-3 > */
-
+/* COMP 25C RELATIVE*/
 .code-skillz > h4 {
     /* COMP 23D FONT */
     position: relative;
